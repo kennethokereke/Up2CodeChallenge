@@ -54,7 +54,7 @@ export class signup extends Component {
                  <View style={{ Height: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight }} />
                 <StatusBar barStyle="light-content"/>
                
-                
+                <KeyboardAwareScrollView enableOnAndroid={true}>
                     <Card style={style.block}>
 
                         <View>
@@ -68,8 +68,9 @@ export class signup extends Component {
 
                         </View>
                         
-                        <KeyboardAwareScrollView enableOnAndroid={true}>
+                        
                         <Form>
+                       
                             <Item floatingLabel>
                                 <Label style={style.label}>Full Name</Label>
                                 <Input secureTextEntry={false}
@@ -94,8 +95,9 @@ export class signup extends Component {
 
 
                             </Item>
+                           
                         </Form>
-                        </KeyboardAwareScrollView>
+                       
 
                         <View style={{ height: 40, width: 40 }} />
 
@@ -167,6 +169,7 @@ export class signup extends Component {
                    
                 
             </Card>
+            </KeyboardAwareScrollView>
             
             
             </ImageBackground>
