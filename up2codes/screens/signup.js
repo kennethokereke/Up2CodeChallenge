@@ -155,6 +155,8 @@ export class signup extends Component {
                                </View>
                           </TouchableOpacity>
                       </View>
+
+                      
               
 
                         
@@ -165,6 +167,8 @@ export class signup extends Component {
                    
                 
             </Card>
+            
+            
             </ImageBackground>
         )
     }
